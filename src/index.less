@@ -1,0 +1,73 @@
+html, body, :global(#root) {
+  height: 100%;
+  // overflow: hidden;
+  font-family: 'PingFang SC'!important;
+}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/  
+::-webkit-scrollbar  
+{  
+    width: 4px;  /*滚动条宽度*/
+    // height: 10px  /*滚动条高度*/
+}  
+  
+/*定义滚动条轨道 内阴影+圆角*/  
+::-webkit-scrollbar-track  
+{  
+    /*滚动条的背景区域的内阴影*/
+    // box-shadow:0px 1px 3px rgba(0,0,0,0.3) inset;
+
+    /*滚动条的背景区域的圆角*/
+    // border-radius: 10px;  
+
+    /*滚动条的背景颜色*/
+    background-color: transparent;
+}  
+  
+/*定义滑块 内阴影+圆角*/  
+::-webkit-scrollbar-thumb  
+{  
+    /*滚动条的内阴影*/
+    // box-shadow:0px 1px 3px rgba(0,0,0,0.3) inset;
+
+    /*滚动条的圆角*/
+    border-radius: 2px;  
+
+    /*滚动条的背景颜色*/
+    background-color: #BDBDBD;  
+}
+:global {
+  .ant-form-item-label > label{
+    color: #12161B;
+  }
+
+  .ant-table-thead > tr > th > {
+    text-align: center!important;
+  }
+  .ant-card ,.ant-collapse,.ant-radio-group,.ant-select-dropdown,.ant-select,.ant-input{
+    font-family: 'PingFang SC'!important;
+  }
+  .ant-table-tbody > tr > td {
+    text-align: center;
+  }
+  .ant-pagination , .ant-table ,.ant-select-dropdown{
+    font-size: 12px!important;
+    font-family: 'PingFang SC'!important;
+  }
+  .ant-table-small{
+    border-radius: 0!important;
+  }
+  .ant-pagination-options{
+    .ant-select-selection--single {
+      height: 26px!important;
+      font-size: 12px;
+      color: #5E5E5E;
+      .ant-select-selection__rendered{
+        line-height: 26px;
+      }
+      .ant-select-arrow{
+        margin-top: -4px;
+      }
+    }
+  }
+  
+}

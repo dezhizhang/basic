@@ -1,0 +1,126 @@
+@import '~antd/lib/style/themes/default.less';
+
+.header {
+  height: 50px;
+  padding: 0 16px;
+  background: url('../../assets//header.png');
+  position: relative;
+  font-family:'PingFang SC';
+  display: flex;
+  justify-content: space-between;
+  color: #12161B;
+  .left{
+    display: flex;
+    align-items: center;
+    .logo {
+      cursor: pointer;
+      width: 69px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 6px;
+    }
+    .title{
+      font-size:17px;
+      font-weight:400;
+      line-height:24px;
+    }
+    .fenge{
+      display: inline-block;
+      width: 1px;
+      height: 16px;
+      background: #ACCDFF;
+      margin: 0 16px;
+    }
+    .icon{
+      cursor: pointer;
+    }
+  }
+
+  .right {
+    float: right;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    .message{
+      display: inline-block;
+      position: relative;
+      width: 24px;
+      height: 24px;
+      text-align: center;
+      line-height: 24px;
+      background: #5B9CFF;
+      border-radius: 2px;
+      >span{
+          position: absolute;
+          width:14px;
+          height: 14px;
+          background-color: #fff;
+          right: -7px;
+          top: -7px;
+          border-radius: 50%;
+          font-size: 9px;
+          line-height: 14px;
+      }
+      
+    }
+    .fenge{
+      display: inline-block;
+      width: 1px;
+      height: 16px;
+      background: #ACCDFF;
+      margin: 0 8px;
+    }
+
+    .account {
+      height: 24px;
+      display: inline-block;
+      margin-right: 8px;
+      line-height: 24px;
+      background: #A7C9FF;
+      border-radius: 2px 0 0 2px;
+      .name{  
+        margin: 0  10px 0 6px;
+        font-size: 12px;
+      }
+      .avatar {
+        border-radius: 0;
+        cursor: pointer;
+        vertical-align: top;
+      }
+    }
+    .out{
+      line-height: 24px;
+      text-align: center;
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background: #AF9FFF;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+  
+}
+
+
+
+
+  .action {
+    cursor: pointer;
+    padding: 0 12px;
+    display: inline-block;
+    transition: all 0.3s;
+    height: 100%;
+    > i {
+      font-size: 16px;
+      vertical-align: middle;
+      color: @text-color;
+    }
+    &:hover,
+    &:global(.ant-popover-open) {
+      background: @primary-1;
+    }
+    
+  }
+  
+}
+

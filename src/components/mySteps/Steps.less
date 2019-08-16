@@ -1,0 +1,60 @@
+.main{
+  display: flex;
+  justify-content: space-between;
+  font-size:16px;
+  font-family:'PingFang SC';
+  color: #fff;
+  >div{
+    flex: 1;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    background-color: #C7C8CC;
+    padding-left: 64px;
+    &::before{
+      content: "";
+      position: absolute;
+      border:20px solid transparent;
+      border-color: #fff #fff transparent transparent;
+      transform: rotateZ(45deg);
+      top: 0px;
+      left: -20px;
+    }
+    &::after{
+      content: "";
+      position: absolute;
+      border:14px solid transparent;
+      border-color: #C7C8CC #C7C8CC transparent transparent;
+      transform: rotateZ(45deg);
+      top: 6px;
+      left: -14px;
+    }
+    &:first-child{
+      padding-left: 32px;
+      &::before{
+        content: none;
+      }
+      &::after{
+        content: none;
+      }
+    }
+  }
+  .selected{
+    background-color: #5B9CFF;
+    &::after{
+      border-color: #5B9CFF #5B9CFF transparent transparent!important;
+    }
+  }
+  .next{
+    &::after{
+      border-color: #5B9CFF #5B9CFF transparent transparent!important;
+    }
+  }
+  .show{
+    display: block
+  }
+  .hide{
+    display: none;
+  }
+  
+}

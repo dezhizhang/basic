@@ -1,0 +1,109 @@
+@color:#12161B;
+.bg{
+	width: 100%;
+	height: 100vh;
+	margin: 0px;
+	padding: 0px;
+	// min-height: 576px;
+	background: #fff;
+	overflow: hidden;
+	background-image: url('../../assets/bg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center 0;
+	.bg-box{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		.login{
+			width:664px;
+			height:370px;
+			background:rgba(255,255,255,1);
+			box-shadow:0px 0px 16px rgba(0,0,0,0.2);
+			opacity:1;
+			border-radius:8px;
+			.login-box{
+				display: flex;
+				width: 100%;
+				height: 100%;
+				.login-left{
+					flex: 1;
+					width:350px;
+					height:370px;
+					background:rgba(232,232,232,1);
+					border-radius:8px 0px 0px 8px;
+					.left-image{
+						width: 100%;
+						height: 100%;
+					}
+				}
+			.login-right{
+				width: 314px;
+				padding: 36px 43px;
+				.right-box{
+					.login-image{
+						height: auto;
+						text-align: center;
+						.right-image{
+							width:119px;
+							height:32px;
+						}
+					}
+					.login-title{
+						text-align: center;
+						width:221px;
+						height:32px;
+						font-size:28px;
+						font-family:'PingFang SC';
+						font-weight:400;
+						line-height:30px;
+						color: @color;
+						margin: 14px  0 0;
+					}
+					.login-form{
+						margin-top: 38px;
+						.login-form-forgot{
+							float: right;
+							font-size:12px;
+							font-family:'PingFang SC';
+							font-weight:400;
+							line-height:17px;
+							color: #0042F5;
+						}
+						.login-form-button{
+								width: 100%;
+								text-align: center;
+								font-size:16px;
+								font-family:'PingFang SC';
+							}
+						}
+						:global{
+							.ant-form-item{
+								margin-bottom: 16px;
+								.ant-form-item-control{
+									line-height: normal;
+									.ant-input{
+										padding: 4px 8px;
+										&::placeholder{
+											font-family:'PingFang SC';
+											font-weight:400;
+											font-size: 13px;
+											color: #999999;
+										}
+									}
+								}
+								.ant-input-group-addon{
+									width: 32px;
+									padding: 0;
+								}
+							}
+						}
+					}	
+				}
+			}
+		}
+	}
+}

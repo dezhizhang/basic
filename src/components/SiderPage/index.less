@@ -1,0 +1,117 @@
+:global{
+  .ant-menu-submenu > .ant-menu , .ant-menu-submenu-title:active{
+    background:  #DAD9EA;
+  }
+  .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected,.ant-menu-item:active{
+    background: #79789F;
+  }
+  .ant-menu-item-selected,.ant-menu-item:hover, .ant-menu-item-active, .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open, .ant-menu-submenu-active, .ant-menu-submenu-title:hover{
+    background-color: #DAD9EA;
+  }
+  .ant-menu{
+    color:#4A4C50;
+  }
+  .ant-menu-item:hover{
+    background-color: #79789F;
+  }
+  .ant-menu-submenu-open.ant-menu-submenu-inline > .ant-menu-submenu-title .ant-menu-submenu-arrow:before {
+    transform: rotate(-45deg) translateX(2px);
+    }
+    .ant-menu-submenu-open.ant-menu-submenu-inline > .ant-menu-submenu-title .ant-menu-submenu-arrow:after {
+      transform: rotate(-135deg) translateX(-2px);
+  }
+  .ant-menu-submenu-vertical > .ant-menu-submenu-title .ant-menu-submenu-arrow:before, .ant-menu-submenu-vertical-left > .ant-menu-submenu-title .ant-menu-submenu-arrow:before, .ant-menu-submenu-vertical-right > .ant-menu-submenu-title .ant-menu-submenu-arrow:before, .ant-menu-submenu-inline > .ant-menu-submenu-title .ant-menu-submenu-arrow:before, .ant-menu-submenu-vertical > .ant-menu-submenu-title .ant-menu-submenu-arrow:after, .ant-menu-submenu-vertical-left > .ant-menu-submenu-title .ant-menu-submenu-arrow:after, .ant-menu-submenu-vertical-right > .ant-menu-submenu-title .ant-menu-submenu-arrow:after, .ant-menu-submenu-inline > .ant-menu-submenu-title .ant-menu-submenu-arrow:after{
+    background-image: none;
+    background: #6F699C;
+  }
+  .ant-menu-inline .ant-menu-item{
+    font-size: 12px;
+  }
+  .ant-menu-inline .ant-menu-item.indexclass{
+    font-size: 14px;
+    font-weight: normal;
+    background: #EBEAF0;
+  }
+  .ant-menu-inline .ant-menu-item:not(:last-child){
+    margin-bottom: 0;
+  }
+  img{
+    width: 16px;
+    height: 16px;
+  }
+}
+.wrapper{
+  a{
+    color: #4A4C50;
+  }
+  .logo{
+    height: 50px;
+    display: flex;
+    // justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+  }
+  .menu{
+    color: #4A4C50;
+    li{
+      margin: 0;
+    }
+    
+  }
+ 
+    :global{
+      .ant-menu-submenu-vertical > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow:after, .ant-menu-submenu-vertical-left > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow:after, .ant-menu-submenu-vertical-right > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow:after, .ant-menu-submenu-inline > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow:after, .ant-menu-submenu-vertical > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow:before, .ant-menu-submenu-vertical-left > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow:before, .ant-menu-submenu-vertical-right > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow:before, .ant-menu-submenu-inline > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow:before{
+        background: #FFF;
+      }
+      .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected{
+        background: #79789F;
+      }
+      .ant-menu-submenu > .ant-menu  ,.ant-menu-vertical{
+        background:  #EBEAF0;
+      }
+      .ant-menu-inline{
+        border-right: 0!important;
+      }
+      .ant-menu-inline .ant-menu-item, .ant-menu-inline .ant-menu-submenu-title{
+        width: 100%;
+      }
+      .ant-menu  > .ant-menu-item{
+        padding-left: 10px!important;
+        line-height: 40px;
+        height: 40px;
+        color: #4A4C50;
+      }
+      .ant-menu-sub > .ant-menu-item{
+        line-height: 32px;
+        padding-left: 34px!important;
+        height: 32px;
+      }
+      .ant-menu-submenu-title{
+        padding-left: 10px!important;
+        margin: 0;
+      }
+      .ant-menu-submenu-selected>div{
+        font-size: 14px;
+        background-color: #DAD9EA;
+        // color: #DFE4EB;
+      }
+      .ant-menu-item-selected{
+        background: #79789F;
+        color: #FFF!important;
+      }
+      .ant-menu-item-selected::after{
+        border: none;
+      }
+      .ant-menu-item:hover, .ant-menu-item-active, .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open, .ant-menu-submenu-active, .ant-menu-submenu-title:hover{
+        color: #4A4C50;
+      }
+      .ant-menu-inline-collapsed{
+        width: 41px;
+      }
+      .ant-menu-inline-collapsed > .ant-menu-item, .ant-menu-inline-collapsed > .ant-menu-item-group > .ant-menu-item-group-list > .ant-menu-item, .ant-menu-inline-collapsed > .ant-menu-item-group > .ant-menu-item-group-list > .ant-menu-submenu > .ant-menu-submenu-title, .ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title{
+        padding: 0 0 0 10px!important;
+        margin: 0;
+      }
+    }
+ 
+}

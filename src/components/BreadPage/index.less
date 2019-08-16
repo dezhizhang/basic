@@ -1,0 +1,52 @@
+.wrapper{
+    width: 100%;
+    height: 42px;
+    background: #fff;
+    padding: 0  16px;
+    line-height: 42px;
+    border-bottom: 1px solid #C7C8CC;
+    display: flex;
+    align-items: center;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #5E5E5E;
+    position: relative;
+    :global{
+        .ant-breadcrumb{
+            font-family: PingFangSC-Regular;
+            font-size: 12px;
+            color: #5E5E5E!important;
+            a,a:hover{
+                color: #5E5E5E!important; 
+            }
+        }
+    }
+    .right{
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        width: 26px;
+        height: 26px;
+        transform:translateY(-50%);
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        border-radius: 4px;
+        color: #FFFFFF;
+        background: #00A1A8;
+        border: 1px solid #00A1A8;
+        cursor:pointer;
+    }
+    .right:hover,.right:active{
+        background: #00A1A8;
+        border: 1px solid #00A1A8;
+    }
+    .rightC{
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform:translateY(-50%);
+    }
+} 
+

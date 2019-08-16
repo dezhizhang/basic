@@ -1,0 +1,52 @@
+.mytable{
+  min-width: 100%;
+  font-family:'PingFang SC';
+  overflow-x: auto;
+  .title{
+    font-family:'PingFang SC';
+    font-size: 14px;
+    color: #12161B;
+    font-weight: 600;
+    margin-bottom: 7px;
+    .tag{
+      font-family: 'PingFangSC-Regular';
+      font-size: 14px;
+      color: #ccc;
+      font-weight: 0;
+    }
+  }
+
+  table{
+    background-color: #fff;
+    font-size:12px;
+    border: 1px solid #C7C8CC;
+    width: 100%;
+    margin-bottom: 16px;
+    &.rowtable{
+      td{
+        color: #12161B;
+        height:32px;
+        text-align: center;
+        width: 25%;
+        border: 1px solid #C7C8CC;
+        &:nth-child(odd){
+          background-color: #F6F6F6;
+        }
+      }
+    }
+    &.coltable{
+      th{
+        border: 1px solid #C7C8CC;
+        background-color: #F6F6F6;
+        height:32px;
+        text-align: center;
+      }
+      td{
+        color: #12161B;
+        height:32px;
+        text-align: center;
+        border: 1px solid #C7C8CC;
+      }
+    }
+  }
+}
